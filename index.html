@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Anmy Labs builds practical apps for everyday life, including PayDay."
+    />
+    <meta name="theme-color" content="#05080a" />
+    <meta property="og:title" content="PayDay | Anmy Labs" />
+    <meta
+      property="og:description"
+      content="PayDay helps you track salary, bills, commitments, income, and cloud backup in one app."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="./assets/icon.png" />
+    <meta name="twitter:card" content="summary" />
+    <title>PayDay | Anmy Labs</title>
+    <link rel="icon" href="./assets/icon.png" />
+    <link rel="apple-touch-icon" href="./assets/icon.png" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="./index.html" aria-label="Anmy Labs home">
+        <img src="./assets/icon.png" alt="" class="brand-icon" />
+        <span>Anmy Labs</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#payday">PayDay</a>
+        <a href="#features">Features</a>
+        <a href="#sync">Cloud Backup</a>
+        <a class="nav-button" href="#payday">Explore PayDay</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero section-shell" id="top">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">PayDay by Anmy Labs</p>
+          <h1>Know where every Cent goes.</h1>
+          <p class="hero-text">
+            Manage your salary, bills, commitments, rent, and income in one
+            calm dashboard. PayDay keeps your money plan clear, local-first,
+            and ready to restore when you need it.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-button" href="#payday">Explore PayDay</a>
+            <a class="secondary-button" href="#features">See Features</a>
+          </div>
+          <div class="hero-metrics" aria-label="PayDay highlights">
+            <div>
+              <strong>Works Offline</strong>
+              <span>Your finances stay available.</span>
+            </div>
+            <div>
+              <strong>Cloud Backup</strong>
+              <span>Restore data with Google sign-in.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal" id="payday" aria-label="PayDay app preview">
+          <div class="phone-mockup">
+            <div class="phone-speaker"></div>
+            <div class="phone-screen">
+              <div class="app-top">
+                <span class="menu-lines" aria-hidden="true"></span>
+                <strong>PayDay</strong>
+                <span class="bell-dot" aria-hidden="true"></span>
+              </div>
+
+              <div class="salary-strip">
+                <div class="round-icon wallet-icon">$</div>
+                <div>
+                  <span>Monthly Salary</span>
+                  <strong>USD 3,000.00</strong>
+                </div>
+                <span class="chevron">&gt;</span>
+              </div>
+
+              <div class="balance-card">
+                <span>Remaining Balance</span>
+                <strong>USD 1,991.00</strong>
+                <small>66.4% of available income left</small>
+              </div>
+
+              <div class="dashboard-grid">
+                <div class="expense-card">
+                  <span>Listed Expenses</span>
+                  <strong>USD 1,009.00</strong>
+                  <small>Paid USD 0.00 | Unpaid USD 1,009.00</small>
+                  <div class="progress-track"><span></span></div>
+                </div>
+                <div class="flow-card">
+                  <p><span class="dot green"></span>Income <strong>USD 3,000</strong></p>
+                  <p><span class="dot red"></span>Paid <strong>USD 0</strong></p>
+                  <p><span class="dot blue"></span>Left <strong>USD 1,991</strong></p>
+                </div>
+              </div>
+
+              <div class="upcoming-card">
+                <div class="card-heading">
+                  <strong>Upcoming Payments</strong>
+                  <span>View All</span>
+                </div>
+                <div class="payment-row">
+                  <span class="payment-icon car">C</span>
+                  <div>
+                    <strong>Car Loan</strong>
+                    <small>Due on 18th</small>
+                  </div>
+                  <span>USD 650</span>
+                </div>
+                <div class="payment-row">
+                  <span class="payment-icon bill">B</span>
+                  <div>
+                    <strong>DirectLend</strong>
+                    <small>Due on 25th</small>
+                  </div>
+                  <span>USD 200</span>
+                </div>
+              </div>
+
+              <div class="shortcut-rail">
+                <span>Salary</span>
+                <span>Income</span>
+                <span>Bills</span>
+                <span>Rent</span>
+              </div>
+
+              <div class="bottom-nav">
+                <span class="active">Dashboard</span>
+                <span>Reports</span>
+                <span>Settings</span>
+              </div>
+            </div>
+          </div>
+          <div class="glow glow-one"></div>
+          <div class="glow glow-two"></div>
+        </div>
+      </section>
+
+      <section class="section-shell product-band reveal">
+        <img src="./assets/icon.png" alt="PayDay app icon" />
+        <div>
+          <p class="eyebrow">Current App Experience</p>
+          <h2>Everything you need. Nothing you don't.</h2>
+        </div>
+        <p>
+          Count all your bills and commitments in a single app on the go!
+        </p>
+      </section>
+
+      <section class="section-shell features" id="features">
+        <article class="feature-card reveal green-card">
+          <div class="feature-icon">$</div>
+          <h3>Salary Tracking</h3>
+          <p>
+            Set your monthly salary and instantly see the balance left after
+            paid expenses.
+          </p>
+        </article>
+        <article class="feature-card reveal red-card">
+          <div class="feature-icon">C</div>
+          <h3>Bills &amp; Commitments</h3>
+          <p>
+            Keep loans, bills, rent, house payments, and recurring commitments
+            organized.
+          </p>
+        </article>
+        <article class="feature-card reveal blue-card">
+          <div class="feature-icon">R</div>
+          <h3>Reports</h3>
+          <p>
+            Review salary, received income, paid expenses, unpaid expenses, and
+            remaining balance.
+          </p>
+        </article>
+        <article class="feature-card reveal purple-card">
+          <div class="feature-icon">I</div>
+          <h3>Income Checklist</h3>
+          <p>
+            Add bonus income and count it only when it has actually been
+            received.
+          </p>
+        </article>
+        <article class="feature-card reveal cyan-card">
+          <div class="feature-icon">S</div>
+          <h3>Cloud Sync</h3>
+          <p>
+            Back up your saved bills and commitment progress into cloud and
+            restore it later!
+          </p>
+        </article>
+      </section>
+
+      <section class="section-shell sync-section reveal" id="sync">
+        <div>
+          <p class="eyebrow">Cloud Backup</p>
+          <h2>Your data. Always protected.</h2>
+          <p>
+            PayDay keeps all your data locally in your device. Log in to your
+            Google account to save your commitment data and restore it later.
+          </p>
+        </div>
+        <div class="sync-panel">
+          <div class="sync-row">
+            <span class="sync-icon">1</span>
+            <div>
+              <strong>Offline First</strong>
+              <small>Continue using PayDay even without internet access.</small>
+            </div>
+          </div>
+          <div class="sync-row">
+            <span class="sync-icon">2</span>
+            <div>
+              <strong>Cloud Backup</strong>
+              <small>Your latest local changes can be safely backed up.</small>
+            </div>
+          </div>
+          <div class="sync-row">
+            <span class="sync-icon">3</span>
+            <div>
+              <strong>Easy Restore</strong>
+              <small>Recover financial data on a new install in a few taps.</small>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-shell company reveal" id="company">
+        <p class="eyebrow">About Anmy Labs</p>
+        <h2>Building software that solves everyday problems.</h2>
+        <p>
+          We create modern applications that combine thoughtful design,
+          reliable performance, and practical features to make everyday life
+          simpler.
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <strong>Anmy Labs</strong>
+        <span>&copy; 2026 Anmy Labs</span>
+      </div>
+      <nav aria-label="Footer navigation">
+        <a href="./privacy.html">Privacy Policy</a>
+        <a href="./terms.html">Terms of Service</a>
+      </nav>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
