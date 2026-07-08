@@ -794,6 +794,171 @@ h3 {
   padding: clamp(2rem, 7vw, 5rem) 0;
 }
 
+.register-main {
+  min-height: calc(100vh - 10rem);
+}
+
+.register-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 0.92fr) minmax(20rem, 0.78fr);
+  align-items: center;
+  gap: clamp(2rem, 6vw, 5rem);
+  padding: clamp(2.5rem, 7vw, 5.6rem) 0 clamp(4rem, 8vw, 6rem);
+}
+
+.register-copy h1 {
+  max-width: 11ch;
+}
+
+.register-highlights {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.85rem;
+  max-width: 44rem;
+}
+
+.register-highlights div,
+.register-panel,
+.success-card {
+  border: 1px solid var(--border);
+  background: rgba(13, 20, 24, 0.86);
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.22);
+}
+
+.register-highlights div {
+  min-height: 7rem;
+  padding: 1rem;
+  border-radius: 1.1rem;
+}
+
+.register-highlights strong,
+.register-highlights span {
+  display: block;
+}
+
+.register-highlights strong {
+  margin-bottom: 0.25rem;
+}
+
+.register-highlights span {
+  color: var(--soft-text);
+  font-size: 0.93rem;
+}
+
+.register-panel {
+  padding: clamp(1.25rem, 4vw, 2rem);
+  border-radius: 1.5rem;
+}
+
+.register-panel h2 {
+  margin-bottom: 1.35rem;
+  font-size: clamp(1.85rem, 4vw, 3rem);
+}
+
+.register-form {
+  display: grid;
+  gap: 1rem;
+}
+
+.field-group {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.field-group label {
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+
+.field-group input {
+  width: 100%;
+  min-height: 3.35rem;
+  padding: 0 1rem;
+  border: 1px solid var(--border);
+  border-radius: 0.85rem;
+  background: rgba(5, 8, 10, 0.82);
+  color: var(--text);
+  font: inherit;
+  font-weight: 700;
+}
+
+.field-group input:focus {
+  border-color: rgba(88, 217, 87, 0.72);
+  outline: 3px solid rgba(88, 217, 87, 0.15);
+}
+
+.field-group input::placeholder {
+  color: var(--soft-text);
+}
+
+.submit-button {
+  width: 100%;
+  border: 0;
+  cursor: pointer;
+  font: inherit;
+}
+
+.submit-button:disabled {
+  cursor: wait;
+  opacity: 0.72;
+}
+
+.form-message {
+  min-height: 0;
+  margin: 0;
+  padding: 0.85rem 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.85rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.form-message:empty {
+  display: none;
+}
+
+.form-message[data-type="error"] {
+  border-color: rgba(255, 77, 61, 0.28);
+  background: rgba(255, 77, 61, 0.1);
+  color: #ffd3cf;
+}
+
+.success-main {
+  display: grid;
+  align-items: center;
+  padding: clamp(2rem, 7vw, 5rem) 0;
+}
+
+.success-card {
+  display: grid;
+  justify-items: start;
+  max-width: 760px;
+  padding: clamp(1.4rem, 5vw, 3rem);
+  border-radius: 1.5rem;
+}
+
+.success-icon {
+  width: 5rem;
+  margin-bottom: 1.2rem;
+  border-radius: 1.25rem;
+  box-shadow: 0 0.8rem 2rem rgba(88, 217, 87, 0.2);
+}
+
+.success-card h1 {
+  max-width: none;
+  margin-bottom: 1rem;
+  font-size: clamp(2.2rem, 6vw, 4.4rem);
+}
+
+.success-card p:not(.eyebrow) {
+  max-width: 40rem;
+  margin-bottom: 1.5rem;
+  color: var(--muted);
+  font-size: 1.1rem;
+}
+
 .legal-card {
   width: min(860px, calc(100% - 2rem));
   margin: 0 auto;
@@ -844,7 +1009,8 @@ h3 {
 @media (max-width: 960px) {
   .hero,
   .product-band,
-  .sync-section {
+  .sync-section,
+  .register-hero {
     grid-template-columns: 1fr;
   }
 
@@ -859,6 +1025,10 @@ h3 {
 
   .features {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .register-copy h1 {
+    max-width: 13ch;
   }
 }
 
@@ -958,5 +1128,14 @@ h3 {
 
   .product-band {
     text-align: left;
+  }
+
+  .register-highlights {
+    grid-template-columns: 1fr;
+  }
+
+  .register-panel,
+  .success-card {
+    border-radius: 1.1rem;
   }
 }
