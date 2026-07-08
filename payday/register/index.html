@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Join the PayDay Interest Register from Anmy Labs."
+    />
+    <meta name="theme-color" content="#05080a" />
+    <meta property="og:title" content="PayDay Interest Register | Anmy Labs" />
+    <meta
+      property="og:description"
+      content="Register your interest in PayDay beta access from Anmy Labs."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="../../assets/icon.png" />
+    <meta name="twitter:card" content="summary" />
+    <title>PayDay Interest Register | Anmy Labs</title>
+    <link rel="icon" href="../../assets/icon.png" />
+    <link rel="apple-touch-icon" href="../../assets/icon.png" />
+    <link rel="stylesheet" href="../../style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="../../index.html" aria-label="Anmy Labs home">
+        <img src="../../assets/icon.png" alt="" class="brand-icon" />
+        <span>Anmy Labs</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="../../index.html#payday">PayDay</a>
+        <a href="../../index.html#features">Features</a>
+        <a href="../../index.html#sync">Cloud Backup</a>
+        <a class="nav-button" href="#register-form">Join Interest List</a>
+      </nav>
+    </header>
+
+    <main class="register-main">
+      <section class="section-shell register-hero" id="register">
+        <div class="register-copy reveal">
+          <p class="eyebrow">PayDay beta access</p>
+          <h1>Join the PayDay Interest Register.</h1>
+          <p class="hero-text">
+            Be first in line for PayDay beta access when the next testing group
+            opens. Anmy Labs will only use your details for PayDay updates.
+          </p>
+          <div class="register-highlights" aria-label="Interest register details">
+            <div>
+              <strong>Early Access</strong>
+              <span>Get notified when beta slots become available.</span>
+            </div>
+            <div>
+              <strong>PayDay Updates</strong>
+              <span>Receive practical product and release notes by email.</span>
+            </div>
+          </div>
+        </div>
+
+        <section class="register-panel reveal" aria-labelledby="register-title">
+          <p class="eyebrow">Interest Register</p>
+          <h2 id="register-title">Reserve your place</h2>
+          <form class="register-form" id="interest-register-form" novalidate>
+            <div class="field-group">
+              <label for="full-name">Full Name</label>
+              <input
+                id="full-name"
+                name="name"
+                type="text"
+                autocomplete="name"
+                required
+                minlength="2"
+                maxlength="120"
+              />
+            </div>
+
+            <div class="field-group">
+              <label for="email-address">Email Address</label>
+              <input
+                id="email-address"
+                name="email"
+                type="email"
+                autocomplete="email"
+                inputmode="email"
+                required
+                maxlength="254"
+              />
+            </div>
+
+            <button class="primary-button submit-button" type="submit">
+              Join the Interest List
+            </button>
+
+            <p
+              class="form-message"
+              id="register-message"
+              role="status"
+              aria-live="polite"
+            ></p>
+          </form>
+        </section>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <strong>Anmy Labs</strong>
+        <span>&copy; 2026 Anmy Labs</span>
+      </div>
+      <nav aria-label="Footer navigation">
+        <a href="../../privacy.html">Privacy Policy</a>
+        <a href="../../terms.html">Terms of Service</a>
+        <a href="../../account-deletion.html">Data Deletion</a>
+      </nav>
+    </footer>
+
+    <script src="../../script.js"></script>
+    <script type="module" src="../../assets/js/interest-register.js"></script>
+  </body>
+</html>
